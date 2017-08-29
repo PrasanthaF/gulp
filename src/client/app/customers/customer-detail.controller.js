@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -6,6 +6,7 @@
         .controller('CustomerDetail', CustomerDetail);
 
     CustomerDetail.$inject = ['$stateParams', '$window', 'dataservice', 'logger'];
+
     /* @ngInject */
     function CustomerDetail($stateParams, $window, dataservice, logger) {
         var vm = this;
@@ -17,6 +18,9 @@
         vm.save = save;
         vm.title = 'Customer Detail';
 
+        // function foo() {
+        //      a = 2;
+        // }
         activate();
 
         function activate() {
